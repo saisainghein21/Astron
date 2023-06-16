@@ -1,0 +1,1086 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+:root {
+    --font-family: 'Raleway', sans-serif;
+    --white-color: white;
+    --black-color: black;
+    --lightgray-color: lightgray;
+    --default-bgcolor: #020308;
+    --darkgray-color: #161718;
+}
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    color: var(--white-color);
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 200vh;
+}
+
+
+/*----- navigation bar -----*/
+
+.nav_container {
+    background-color: var(--black-color);
+    height: 80px;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+}
+
+.nav_container .nav_left_side {
+    width: 30%;
+}
+
+.nav_container .nav_left_side img {
+    width: 200px;
+    padding: 10px 0 0 40px;
+}
+
+.nav_container .nav_right_side {
+    display: flex;
+    width: 70%;
+}
+
+.nav_container .nav_right_side ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.nav_container .nav_right_side ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--white-color);
+}
+
+.nav_container .nav_right_side ul li {
+    list-style: none;
+    position: relative;
+}
+
+.nav_right_side ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: cyan;
+    bottom: -15px;
+    left: 0;
+    transition: 1s;
+}
+
+.nav_right_side ul li a:hover::after {
+    width: 100%;
+}
+
+.nav_right_side ul li a:hover {
+    color: cyan;
+}
+
+.nav_container .login {
+    display: flex;
+    align-items: center;
+}
+
+.nav_container .login .btn a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.nav_container .login .btn {
+    width: 90px;
+    margin-right: 20px;
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+.nav_container .login .btn_login {
+    background-color: lightblue;
+}
+
+.nav_container .login .btn_login:hover {
+    background-color: lightgray;
+}
+
+.nav_container .login .btn_login a {
+    color: var(--black-color);
+}
+
+.nav_container .login .btn_login a:hover {
+    color: var(--black-color);
+}
+
+.nav_container .login .btn_signup {
+    background-color: rgb(246, 92, 92);
+}
+
+.nav_container .login .btn_signup:hover {
+    background-color: lightgray;
+}
+
+.nav_container .login .btn_signup a {
+    color: var(--black-color);
+}
+
+.nav_container .login .btn_signup a:hover {
+    color: var(--black-color);
+}
+
+
+/* footer */
+
+.footer_container {
+    background-color: var(--black-color);
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+
+/* first part */
+
+.footer_container .first_part {
+    width: 33%;
+}
+
+.footer_container .first_part img {
+    width: 400px;
+    padding: 50px 0 0 200px;
+}
+
+.footer_container .first_part p,
+.footer_container .first_part .social_icons {
+    padding: 30px 0 0 200px;
+}
+
+.footer_container .first_part .social_icons i {
+    margin: 0 10px;
+}
+
+.footer_container .first_part .social_icons .fa-facebook:hover::before {
+    color: #0D6EFD;
+}
+
+.footer_container .first_part .social_icons .fa-twitter:hover::before {
+    color: #0D6EFD;
+}
+
+.footer_container .first_part .social_icons .fa-youtube:hover::before {
+    color: red;
+}
+
+.copyright h3 {
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+    margin-left: -800px;
+    color: rgba(195, 195, 195, 0.866);
+}
+
+
+/* second part */
+
+.footer_container .sec_part {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.sec_part .cat_footer h1 {
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.sec_part .cat_footer h3 {
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.sec_part .cat_footer h3 a,
+.third_part .get_in_touch h3 {
+    text-decoration: none;
+    color: var(--lightgray-color);
+}
+
+
+/* third part */
+
+.footer_container .third_part {
+    width: 33%;
+}
+
+.third_part .get_in_touch h3 {
+    margin: 30px 0;
+}
+
+.third_part .get_in_touch h1 {
+    margin-top: 70px;
+    font-size: 30px;
+}
+
+.third_part .get_in_touch h3 {
+    font-size: 20px;
+}
+
+.copyright {
+    background-color: var(--black-color);
+    display: flex;
+    justify-content: center;
+}
+
+
+/* index page */
+
+.container_index {
+    height: 550vh;
+    width: 100%;
+    background-color: var(--default-bgcolor);
+    margin-top: 50px;
+}
+
+
+/* moon */
+
+.moon {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.moon .caption {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.moon .caption h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.moon img {
+    margin-top: -250px;
+    width: 1400px;
+    z-index: -1;
+}
+
+
+/* Grow with us */
+
+.grow_with_us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grow_with_us h1 {
+    font-family: var(--font-family);
+    font-weight: 900;
+    margin-bottom: 70px;
+}
+
+.grow_with_us .four_categories {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    filter: brightness( 200%) contrast( 200%) saturate( 100%) blur( 0px) hue-rotate( 0deg);
+}
+
+.four_categories .cat_detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.four_categories .cat_detail img {
+    width: 100px;
+}
+
+.four_categories .cat_detail p {
+    text-align: center;
+    color: gray;
+}
+
+
+/* what is astronomy */
+
+.telescope {
+    width: 100%;
+    margin: 130px 0 150px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.telescope img {
+    width: 80%;
+    height: 650px;
+    position: relative;
+}
+
+.telescope .astronomy_intro {
+    position: absolute;
+    font-family: var(--font-family);
+    width: 500px;
+    height: 350px;
+    background-color: black;
+    opacity: 75%;
+    padding: 20px;
+    margin: 200px -600px 0 0;
+    font-weight: 800;
+}
+
+.telescope .astronomy_intro button {
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid cyan;
+    color: var(--white-color);
+}
+
+.telescope .astronomy_intro button:hover {
+    border: 1px solid rgb(255, 0, 217);
+    color: cyan;
+}
+
+
+/* Astronomy discovery */
+
+.astronomy_discovery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.astronomy_discovery .planets_intro {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.astronomy_discovery .planets_intro h5 {
+    font-weight: 600;
+    font-family: var(--font-family);
+}
+
+.astronomy_discovery .planets_intro h1 {
+    font-weight: 900;
+    font-size: 50px;
+    margin: 10px 0;
+    font-family: var(--font-family);
+}
+
+.rocky_planets {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rocky_planets .planet {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rocky_planets .planet img {
+    width: 300px;
+    margin: 60px 0 40px 0;
+}
+
+.rocky_planets .mars img {
+    width: 400px;
+}
+
+.rocky_planets .planet p {
+    margin: 0 40px;
+    text-align: center;
+}
+
+
+/* white line  */
+
+.line {
+    margin: 150px 0 60px 250px;
+}
+
+.line hr {
+    width: 80%;
+}
+
+
+/* blog  */
+
+.blog {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog .blog_intro {
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 600;
+    width: 40%;
+}
+
+.blog .blog_intro h4,
+.blog .blog_intro h1 {
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+
+/* blog  */
+
+.blog .blog_post {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog .blog_post .blog_details {
+    margin: 50px 5px 90px 5px;
+    width: 32%;
+}
+
+.blog_post .blog_details .image_container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog .blog_post .blog_details .image_container img {
+    width: 360px;
+    /* transition: transform 1.5s ease, scale(1.1); */
+    transition: 1s;
+}
+
+.blog_post .blog_details img:hover {
+    transform: scale(1.2);
+}
+
+.blog_details .image_container .published_date {
+    background-color: var(--white-color);
+    width: 60px;
+    height: 60px;
+    color: var(--black-color);
+    position: relative;
+    margin-top: -30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.blog_details .image_container .published_date p {
+    color: var(--black-color);
+    margin-top: -10px;
+}
+
+.blog .blog_post .blog_details h4 {
+    margin: 20px 0;
+    font-size: 23px;
+}
+
+.blog .blog_post .blog_details button {
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1px solid cyan;
+}
+
+.blog .blog_post .blog_details button:hover {
+    border: 1px solid rgb(251, 0, 205);
+}
+
+.blog .blog_post .blog_details button a:hover {
+    color: cyan;
+}
+
+.blog .blog_post .blog_details a {
+    text-decoration: none;
+    color: gray;
+}
+
+.blog_details .viewers {
+    color: grey;
+}
+
+
+/* Let's explore with us */
+
+.bg_milkyway {
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/milky\ way.jpg);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg_milkyway .explore_with_us {
+    background-color: var(--black-color);
+    opacity: 50%;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg_milkyway .explore_with_us h1 {
+    font-size: 50px;
+    font-family: var(--font-family);
+    font-weight: 900;
+}
+
+.bg_milkyway .explore_with_us p {
+    font-size: 20px;
+}
+
+.bg_milkyway .explore_with_us button {
+    background-color: transparent;
+    border: 2px solid cyan;
+    padding: 10px 20px;
+    font-size: 20 px;
+}
+
+.bg_milkyway .explore_with_us button a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.bg_milkyway .explore_with_us button:hover {
+    /* background-image: linear-gradient(to right, #14a5d3 0, #20baa0 100%); */
+    background-color: cyan;
+    color: var(--white-color);
+    border: 1px solid white;
+    opacity: 100%;
+}
+
+
+/* contact  */
+
+.container_contact {
+    height: 300vh;
+    background-color: var(--black-color);
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+/* contact introduction  */
+
+.container_contact .contact {
+    display: flex;
+}
+
+.container_contact .contact .contact_intro {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.container_contact .contact .contact_intro h1 {
+    padding: 0 0 0 250px;
+}
+
+.container_contact .contact .contact_intro p {
+    padding: 30px 200px 0 250px;
+}
+
+.container_contact .contact_intro h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.container_contact .contact .full_moon {
+    margin-top: 130px;
+    width: 40%;
+}
+
+.container_contact .contact .full_moon img {
+    width: 400px;
+}
+
+
+/* Get in touch */
+
+.contact_touch {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact_touch .contact_box {
+    width: 90%;
+    display: flex;
+    background-color: var(--darkgray-color);
+    margin: 100px 0;
+    padding: 100px;
+}
+
+.contact_touch .contact_box .contact_us_input {
+    width: 50%;
+}
+
+.contact_box .contact_us_input h4,
+.contact_box .contact_us_input h1 {
+    font-family: var(--font-family);
+    font-weight: 900;
+}
+
+.contact_box .contact_us_input h1 {
+    font-size: 60px;
+}
+
+.contact_box .contact_us_input section {
+    color: #54595F;
+    margin-bottom: 5px;
+}
+
+.contact_box .contact_us_input input,
+.contact_box .contact_us_input textarea {
+    background-color: #2E2F30;
+    border: 1px solid lightgray;
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.contact_box .contact_us_input textarea {
+    height: 150px;
+}
+
+.contact_box .contact_us_input button {
+    display: block;
+    background-color: transparent;
+    width: 500px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.contact_box .contact_us_input button:hover {
+    border: 1px solid cyan;
+    color: cyan;
+}
+
+.contact_touch .contact_box .contact_us_info {
+    width: 50%;
+}
+
+.contact_box .contact_us_info p {
+    margin: 0 0 30px 0;
+}
+
+
+/* about  */
+
+.container_about {
+    width: 100%;
+    height: 400vh;
+    background-color: var(--black-color);
+}
+
+
+/* blogger profile  */
+
+.profile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile .profile_box {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkgray-color);
+    margin: 100px 0 50px 0;
+    padding: 100px;
+}
+
+.profile .profile_box img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.profile_box h1 {
+    font-family: 'Germania One', cursive;
+}
+
+.profile_box h3 {
+    font-family: 'Germania One', cursive;
+    margin-bottom: 50px;
+}
+
+
+/* Drop a line */
+
+.drop_a_line {
+    width: 100%;
+    display: flex;
+}
+
+.drop_a_line .drop_header {
+    width: 33%;
+}
+
+.drop_a_line .drop_header h1 {
+    font-family: var(--font-family);
+    font-weight: 900;
+}
+
+.drop_a_line .drop_name_email {
+    width: 33%;
+}
+
+.drop_name_email input {
+    width: 300px;
+    height: 50px;
+    padding: 0 15px;
+    margin: 0 0 15px 0;
+    background-color: #2E2F30;
+    border: 1px solid lightgray;
+    color: white;
+}
+
+.drop_a_line .drop_msg {
+    width: 33%;
+}
+
+.drop_a_line .drop_msg input {
+    width: 300px;
+    height: 115px;
+    padding: 0 0 70px 15px;
+    background-color: #2E2F30;
+    border: 1px solid lightgray;
+    margin-bottom: 15px;
+}
+
+.drop_a_line .drop_msg button {
+    width: 100px;
+    padding: 7px;
+    background-color: transparent;
+    border: 1px solid cyan;
+    margin-left: 200px;
+}
+
+.drop_a_line .drop_msg button a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+
+/* blog  */
+
+.container_blogs {
+    width: 100%;
+    height: 400vh;
+}
+
+.blog_box {
+    width: 100%;
+    height: 240vh;
+    background-color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog .blog_intro {
+    margin-top: 160px;
+}
+
+.blog_box .arrow {
+    color: #0D6EFD;
+}
+
+
+/* blog details  */
+
+.container_blog_details {
+    width: 100%;
+    height: 500vh;
+    background-color: var(--black-color);
+    display: flex;
+    justify-content: center;
+}
+
+.container_blog_details .blog_details_box {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.blog_details_box h1 {
+    font-family: var(--font-family);
+    font-weight: 900;
+    margin: 0 0 100px 0;
+}
+
+.blog_details_box .intro_blog {
+    display: flex;
+    align-items: center;
+    margin: 0 0 100px 0;
+}
+
+.blog_details_box .intro_blog img {
+    width: 50%;
+    margin: 0 100px 0 0;
+}
+
+.blog_details_box .intro_blog p {
+    width: 50%;
+    font-size: 18px;
+    text-align: center;
+    color: lightgray;
+}
+
+.blog_details_box .first_para_blog img {
+    margin: 0 0 0 100px;
+}
+
+.blog_details_box .first_para_blog .blog_subtitle {
+    font-size: 20px;
+}
+
+.blog_details_box hr {
+    color: var(--white-color);
+}
+
+.judge_blog {
+    display: flex;
+    margin: 10px 0 50px 0;
+}
+
+.judge_blog p {
+    margin: 0 30px;
+    font-size: 20px;
+}
+
+
+/* comments */
+
+.contact_touch .comment_msg input {
+    width: 600px;
+    height: 150px;
+}
+
+.contact_touch .comment_msg button {
+    margin-left: 500px;
+}
+
+
+/* review for user  */
+
+.review {
+    margin-top: -50px;
+}
+
+.review .review_users {
+    display: flex;
+    flex-direction: column;
+}
+
+.review .review_list {
+    display: flex;
+    align-items: center;
+}
+
+.review .review_list a {
+    text-decoration: none;
+}
+
+.review .review_list img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.review .review_list h4 {
+    font-size: 20px;
+    color: yellow;
+}
+
+.review .review_list .user_code {
+    color: gray;
+}
+
+.review .review_text p {
+    color: lightgray;
+    font-size: 18px;
+    margin-left: 80px;
+}
+
+.review .review_like {
+    display: flex;
+    margin-left: 100px;
+}
+
+.review .review_like p {
+    color: gray;
+}
+
+.review .review_like p {
+    margin: 0 20px;
+}
+
+.review .review_users .reply_pf {
+    margin: 30px 0 0 70px;
+}
+
+.review .review_users .reply_pf img {
+    width: 40px;
+    height: 40px;
+}
+
+.review .review_users .reply_pf h4 {
+    color: var(--lightgray-color);
+    font-size: 17px;
+}
+
+.review .review_users .reply_text {
+    margin: -10px 0 0 50px;
+}
+
+
+/* Gallary  */
+
+.container_gallary {
+    width: 100%;
+    height: 250vh;
+    background-color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.gallary_header {
+    margin: 100px 0 0 70px;
+}
+
+.gallary_header h1 {
+    font-size: 50px;
+    font-family: var(--font-family);
+    font-weight: 900;
+}
+
+.gallary {
+    width: 80%;
+    display: flex;
+    height: 25rem;
+    gap: 1rem;
+    margin: 50px 50px 70px 50px;
+}
+
+.gallary>div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.gallary>div:hover {
+    flex: 3;
+}
+
+
+/* top button  */
+
+.topbtn {
+    position: fixed;
+    z-index: 100;
+    right: 50px;
+    bottom: 50px;
+}
+
+.topbtn i {
+    font-size: 20px;
+    padding: 15px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid cyan;
+}
+
+.topbtn i:hover {
+    background-color: cyan;
+    border: none;
+}
+
+
+/* user profile  */
+
+.user_page {
+    display: flex;
+    flex-direction: column;
+}
+
+.user_profile_box img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.user_info p {
+    margin: 10px 0;
+}
+
+.comment_section_box {
+    margin-top: -350px;
+}
+
+.comment_section_box a,
+.comment_section_box2 a {
+    text-decoration: none;
+}
+
+.comment_section_box2 {
+    margin-top: -530px;
+}
+
+.comment_section {
+    width: 900px;
+}
+
+.mainbox {
+    width: 500px;
+}

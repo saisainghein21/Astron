@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astron >> Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-image: url("https://www.textures.com/system/gallery/photos/Landscapes/Skies%20Partial/19586/Skies0258_2_download600.jpg");
+        }
+        
+        .container-1 {
+            width: 100%;
+            height: 97vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container-1 .mainbox {
+            border: 0px white solid;
+            box-shadow: 0 5px 7px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 0 15px cyan;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .input-boxes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        input {
+            color: white;
+            border: 0;
+            outline: 0;
+            background: transparent;
+            border-bottom: 1px solid #f1f1f1;
+            margin-bottom: 10px;
+            width: 300px;
+            height: 25px;
+            font-size: 17px;
+        }
+        
+        input:focus {
+            border-bottom: 1px solid rgb(251, 0, 205);
+        }
+        
+        h1 {
+            color: #c2c2d6;
+            opacity: 0.5;
+            font-family: 'Google Sans', arial, sans-serif;
+            padding-bottom: 0;
+            padding-top: 16px;
+            font-size: 35px;
+            font-weight: 400;
+            line-height: 1.3333;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        
+        h1:hover {
+            color: rgb(251, 0, 205);
+        }
+        
+        .submit {
+            display: flex;
+            margin: 10px 0;
+        }
+        
+        .submit button {
+            margin-left: 200px;
+        }
+        
+        .forgotAcc {
+            color: cyan;
+            opacity: 0.8;
+        }
+        
+        .submit button {
+            opacity: 0.6;
+            background: grey;
+            color: white;
+            float: right;
+            border: 0px;
+            border-radius: 10%;
+            font-size: 17px;
+            box-shadow: 0 5px 7px 1px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            font-family: inherit;
+        }
+        
+        .submit button:hover {
+            background-color: rgb(251, 0, 205);
+            color: white;
+        }
+        
+        .submit button:hover,
+        .createAcc:hover,
+        .forgotAcc:hover {
+            opacity: 1.0;
+        }
+        
+        .register {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0;
+        }
+        
+        .register button {
+            width: 310px;
+            padding: 10px;
+            margin: 15px 0;
+            border: none;
+        }
+        
+        .register button a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .register .google {
+            background-color: #E34133;
+        }
+        
+        .register .facebook {
+            background-color: #4064AC;
+        }
+        
+        .register .twitter {
+            background-color: #1A98E8;
+        }
+        
+        .back {
+            background-color: rgb(251, 0, 205);
+            padding: 10px 15px;
+            position: fixed;
+            margin: 30px;
+            border: none;
+            border-radius: 20px;
+        }
+        
+        .back a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .back:hover {
+            background-color: cyan;
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <button class="back"><a href="blog_details.html">Back</a></button>
+
+    <div class="user_page">
+        <div class="container-1">
+            <div class="mainbox user_profile_box">
+                <img src="images/Elon Musk.jpg" alt="">
+                <br>
+                <br>
+                <div class="input-boxes user_info">
+                    <p>Name : Elon Musk</p>
+                    <p>Code : #536</p>
+                    <p>Gender : Male</p>
+                    <p>Used : 168 days</p>
+                    <p>Total comments : 2 comments</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-1 comment_section_box">
+            <div class="mainbox user_profile_box comment_section">
+                <a href="blog_details.html">
+                    <h1>Blog 1</h1>
+                </a>
+                <div class="input-boxes user_info">
+                    <p>What a great review!!! Good Job. I will contact you as soon as possible!!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-1 comment_section_box2">
+            <div class="mainbox user_profile_box comment_section">
+                <a href="blog_details.html">
+                    <h1>Blog 2</h1>
+                </a>
+                <div class="input-boxes user_info">
+                    <p>Nice!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer_container">
+            <!-- first part -->
+            <div class="first_part">
+                <img src="images/logo.png" alt="">
+                <p>Unlocking the Mysteries of the Universe: Your Gateway to Space Exploration and Astronomy.
+
+
+                    <div class="social_icons">
+                        <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook fa-2xl" style="color: #eff0f0;"></i></a>&nbsp;
+                        <a href="https://m.youtube.com"><i class="fa-brands fa-twitter fa-2xl" style="color: #eff0f0;"></i></a>&nbsp;
+                        <a href="https://twitter.com/login"><i class="fa-brands fa-youtube fa-2xl" style="color: #eff0f0;"></i></a>
+                    </div>
+            </div>
+
+
+
+            <!-- second part -->
+            <div class="sec_part">
+                <div class="cat_footer">
+                    <h1>Website</h1>
+                    <h3><a href="index.html">Home</a></h3>
+                    <h3><a href="about.html">About</a></h3>
+                    <h3><a href="gallary.html">Gallary</a></h3>
+                    <h3><a href="blogs.html">Blogs</a></h3>
+                    <h3><a href="contact.html">Contact us</a></h3>
+
+                </div>
+
+            </div>
+
+            <!-- third part -->
+            <div class="third_part">
+                <div class="get_in_touch">
+                    <h1>Get In Touch</h1>
+                    <h3><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>&nbsp; Mdy-Lho Road, Pyin Oo Lwin</h3>
+                    <h3><i class="fa-solid fa-phone" style="color: #ffffff;"></i>&nbsp; 09-267145633</h3>
+                    <h3><i class="fa-solid fa-envelope" style="color: #ffffff;"></i>&nbsp;astron@gmail.com</h3>
+                    <h3><i class="fa-solid fa-clock" style="color: #ffffff;"></i>&nbsp;Sun-Saturday, 9 AM - 6 PM</h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <h3>Copyright © 2023 astron | Powered by astron
+            </h3>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
